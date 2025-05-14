@@ -1,0 +1,202 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #f1f5f9;
+  background-color: #000;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.7;
+}
+
+/* Background & Overlays */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("my_image.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+  z-index: -1;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 80px 20px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #334155;
+  animation: fadeIn 1.5s ease-out;
+}
+
+header img.banner-image {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+  margin-bottom: 20px;
+}
+
+/* Main Content */
+main {
+  padding: 50px 25px;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: rgba(17, 24, 39, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #facc15; /* golden/yellow tone */
+  font-weight: bold;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #d1d5db;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  text-align: justify;
+  color: #e2e8f0;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #03f; /* Dark theme background */
+  color: #87fa15;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  width: 220px; /* Fixed width for all buttons */
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+
+/* Location */
+.location {
+  text-align: center;
+  margin-top: 20px;
+  color: #cbd5e1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-top: 1px solid #334155;
+  margin-top: 50px;
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit;        /* Inherit text color from parent */
+}
+
+a:visited {
+  color: inherit;        /* Prevent visited color change */
+}
+
+a:hover {
+  text-decoration: underline; /* Optional: subtle hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header img.banner-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 16px;
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 30px 15px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
