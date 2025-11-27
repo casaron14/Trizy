@@ -3,54 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Antony Mlelwa || Crypto Consultant</title>
+  <title>Antony Mlelwa | Blockchain & Crypto Consultant</title>
   <link rel="stylesheet" href="Style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <header>
-    <img src="my_image.jpg" alt="Antony Mlelwa" class="banner-image" />
-    <h1>Antony Mlelwa <strong>(CFE)</strong></h1>
-    <h2 class="subtitle">Inkryptus Head of Commercial</h2>
-    <h2 class="subtitle">CEO of DIENA Academy</h2>
-    <h2 class="subtitle">Blockchain Enthusiast</h2>  
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">Trizy Magno</div>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#expertise" class="nav-link">Expertise</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="profile-container">
+        <img src="my_image.jpg" alt="Antony Mlelwa" class="profile-image" />
+        <div class="profile-ring"></div>
+      </div>
+      <h1 class="hero-title">Antony Mlelwa <span class="credential">(CFE)</span></h1>
+      <p class="hero-tagline">Blockchain Educator & Digital Finance Innovator</p>
+      <div class="roles">
+        <a href="https://www.inkryptus.com" class="role-card" target="_blank">
+          <span class="role-icon">🏢</span>
+          <div class="role-info">
+            <h3>Head of Commercial</h3>
+            <p>Inkryptus</p>
+          </div>
+        </a>
+        <a href="https://www.dienacademy.com" class="role-card" target="_blank">
+          <span class="role-icon">🎓</span>
+          <div class="role-info">
+            <h3>CEO & Founder</h3>
+            <p>DIENA Academy</p>
+          </div>
+        </a>
+      </div>
+      <a href="#contact" class="cta-button">Get In Touch</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
   </header>
 
   <main>
-    <!-- Hero Introduction -->
-    <section class="bio intro">
-      <h2>Meet Trizy Magno</h2>
-      <p>
-        Antony Polycarp Mlelwa, widely known as Trizy Magno, is an accomplished <strong>Educator</strong> and  <strong>Blockchain Enthusiast</strong> with over seven <strong>(7)</strong> years of experience in the blockchain and digital asset industry. He has a proven track record in demystifying complex crypto concepts, making them accessible to a wide audience, from curious beginners to aspiring professionals.
-      </p>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="section-header">
+        <span class="section-label">Introduction</span>
+        <h2 class="section-title">Meet Trizy Magno</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-card">
+          <p class="about-text">
+            <strong>Antony Polycarp Mlelwa</strong>, widely known as <strong>Trizy Magno</strong>, is an accomplished 
+            educator and blockchain enthusiast with over <strong>7 years</strong> of experience in the blockchain and 
+            digital asset industry. He has a proven track record in demystifying complex crypto concepts, making them 
+            accessible to a wide audience, from curious beginners to aspiring professionals.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <!-- Mission Statement -->
-    <section class="bio mission">
-      <h2> </h2>
-      <p>
-        As a Head of Commercial of <strong><a href="https://www.inkryptus.com" target="_blank">Inkryptus</a></strong> and the CEO of <strong><a href="https://www.dienacademy.com" target="_blank">Dienacademy</a></strong>, he leads efforts to promote financial literacy and responsible crypto adoption and investing. His mission is to bridge traditional and digital finance and advocate for blockchain’s transformative potential.
-      </p>
+    <!-- Expertise Section -->
+    <section class="expertise-section" id="expertise">
+      <div class="section-header">
+        <span class="section-label">What I Do</span>
+        <h2 class="section-title">Mission & Vision</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <div class="expertise-icon">💼</div>
+          <h3>Commercial Leadership</h3>
+          <p>Leading commercial strategy at <a href="https://www.inkryptus.com" target="_blank" class="inline-link">Inkryptus</a>, 
+          driving growth and promoting responsible crypto adoption across markets.</p>
+        </div>
+        <div class="expertise-card">
+          <div class="expertise-icon">📚</div>
+          <h3>Education & Training</h3>
+          <p>As CEO of <a href="https://www.dienacademy.com" target="_blank" class="inline-link">DIENA Academy</a>, 
+          empowering individuals with financial literacy and blockchain knowledge.</p>
+        </div>
+        <div class="expertise-card">
+          <div class="expertise-icon">🌉</div>
+          <h3>Digital Finance Bridge</h3>
+          <p>Bridging traditional and digital finance, advocating for blockchain's transformative potential 
+          in modern financial systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3 class="stat-number">7+</h3>
+          <p class="stat-label">Years Experience</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number">1000+</h3>
+          <p class="stat-label">Students Trained</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number">2</h3>
+          <p class="stat-label">Companies Led</p>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
-      <h2>Contact</h2>
-      <div class="button-group">
-        <a href="antony-mlelwa.vcf" download class="btn">Contact Card</a>
-        <a href="mailto:antonymlelwa@gmail.com" class="btn">Email</a>
-        <a href="tel:+255656240472" class="btn">Call</a>
-        <a href="https://wa.me/+255656240472" target="_blank" class="btn">WhatsApp</a>
-        <a href="https://instagram.com/trizymagno" target="_blank" class="btn">Instagram</a>
-        <a href="https://inkryptusdashmobile.page.link?apn=com.inkryptus.mobile&ibi=com.inkryptus&isi=1618007158&link=https%3A%2F%2Freferral-trizymagno" class="btn">Download Inkryptus</a>
-        <a href="https://youtube.com/@dienacademy?si=vZcqQacW_jR6md0B" target="_blank" class="btn">Youtube</a>
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="title-underline"></div>
       </div>
-      <br>
-      <p class="location"><strong>Location:</strong> Dar es Salaam, Tanzania</p>
+      <p class="contact-intro">Ready to explore blockchain opportunities or learn more? Reach out through any of the channels below.</p>
+      
+      <div class="contact-grid">
+        <a href="antony-mlelwa.vcf" download class="contact-btn primary" title="Save Contact">
+          <i class="fas fa-address-card"></i>
+        </a>
+        <a href="mailto:antonymlelwa@gmail.com" class="contact-btn" title="Email Me">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+255656240472" class="contact-btn" title="Call">
+          <i class="fas fa-phone"></i>
+        </a>
+        <a href="https://wa.me/+255656240472" target="_blank" class="contact-btn whatsapp" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/trizymagno" target="_blank" class="contact-btn instagram" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://youtube.com/@dienacademy?si=vZcqQacW_jR6md0B" target="_blank" class="contact-btn youtube" title="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+
+      <div class="app-download">
+        <h3>Download Inkryptus App</h3>
+        <a href="https://inkryptusdashmobile.page.link?apn=com.inkryptus.mobile&ibi=com.inkryptus&isi=1618007158&link=https%3A%2F%2Freferral-trizymagno" class="app-btn" target="_blank">
+          <span class="app-icon"><i class="fas fa-mobile-alt"></i></span>
+          <div class="app-info">
+            <span class="app-text">Get the App</span>
+            <span class="app-subtext">Available on iOS & Android</span>
+          </div>
+        </a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    &copy; <span id="year"></span> Antony Mlelwa | All Rights Reserved
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Antony Mlelwa. All Rights Reserved.</p>
+      <p class="footer-tagline">Empowering Through Blockchain Education</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
