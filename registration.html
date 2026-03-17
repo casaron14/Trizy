@@ -209,6 +209,22 @@
       color: var(--gold);
       margin-bottom: 5px;
     }
+    .desc-section--highlight {
+      background: linear-gradient(135deg, rgba(245,166,35,0.13) 0%, rgba(245,166,35,0.05) 100%);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 10px 10px 0;
+      box-shadow: 0 0 18px rgba(245,166,35,0.08);
+    }
+    .desc-section--highlight .desc-label {
+      color: #ffffff;
+      font-size: 12px;
+    }
+    .desc-section--highlight p {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 14px !important;
+    }
+
     .desc-section p {
       font-size: 13px;
       color: var(--muted);
@@ -384,19 +400,19 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M12 2l9 5v10l-9 5-9-5V7z"/>
         </svg>
-        INKRYPTUS
+        POWERED BY INKRYPTUS
       </div>
 
       <h1>Blockchain Masterclass<br/>Arusha</h1>
 
       <div class="header-desc">
         <div class="desc-section">
-          <span class="desc-label">Mada</span>
-          <p>Kuelewa Namna ya Kuongeza Kipato Kupitia Asset za Kidigitali Zilizojengwa Kwenye Teknolojia ya Blockchain</p>
-        </div>
-        <div class="desc-section">
           <span class="desc-label">Maelezo</span>
           <p>Jiunge nasi kwenye Blockchain Masterclass maalum utakaokupa uelewa wa msingi na wa vitendo kuhusu namna teknolojia ya blockchain inavyofungua fursa za kiuchumi kupitia digital assets. Mafunzo haya yataonyesha jinsi ya kutumia Inkryptus Wallet kusimamia na kukuza portfolio ya mali za kidigitali pamoja na kuelewa fursa mbalimbali ndani ya uchumi wa blockchain.</p>
+        </div>
+        <div class="desc-section desc-section--highlight">
+          <span class="desc-label">Mada</span>
+          <p>Kuelewa Namna ya Kuongeza Kipato Kupitia Asset za Kidigitali Zilizojengwa Kwenye Teknolojia ya Blockchain</p>
         </div>
         <div class="desc-section">
           <span class="desc-label">Lengo</span>
@@ -517,7 +533,7 @@
   </div><!-- /card -->
 
   <div class="footer">
-    Fomu inaunganisha moja kwa moja na Google Sheets.<br/>
+    Taarifa zako Zipo salama<br/>
     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Sera ya Faragha</a> ·
     <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Masharti</a><br/>
     &copy; 2026 Inkryptus — Blockchain Masterclass Arusha
