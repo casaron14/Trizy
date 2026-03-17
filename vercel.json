@@ -1,8 +1,9 @@
 {
+  "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "routes": [
-    { "src": "/registration", "dest": "/registration.html" },
-    { "src": "/",             "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/registration", "destination": "/registration.html" },
+    { "source": "/",             "destination": "/index.html" }
   ]
 }
