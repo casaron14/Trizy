@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    { "src": "/registration", "dest": "/registration.html" },
+    { "src": "/",             "dest": "/index.html" }
+  ]
+}
