@@ -1,6 +1,10 @@
 // Set current year in footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// Set years of experience (current year minus 2018)
+const yearsExp = new Date().getFullYear() - 2018;
+document.querySelectorAll(".years-exp").forEach(el => el.textContent = yearsExp + "+");
+
 // Scroll indicator visibility
 const scrollIndicator = document.querySelector('.scroll-indicator');
 let lastScrollTop = 0;
@@ -51,9 +55,9 @@ if (navToggle) {
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navbar');
   if (window.scrollY > 100) {
-    navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+    navbar.style.background = 'rgba(219, 212, 255, 0.97)';
   } else {
-    navbar.style.background = 'rgba(15, 23, 42, 0.9)';
+    navbar.style.background = 'rgba(219, 212, 255, 0.92)';
   }
 });
 

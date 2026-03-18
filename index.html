@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Antony Mlelwa | Blockchain & Crypto Consultant</title>
+  <link rel="icon" type="image/webp" href="assets/icon.png" />
   <link rel="stylesheet" href="Style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -30,34 +31,17 @@
 
   <!-- Hero Section -->
   <header class="hero">
+    <div class="hero-image-col">
+      <img src="assets/my_image.webp" alt="Antony Mlelwa" class="profile-image" />
+    </div>
     <div class="hero-content">
-      <div class="profile-container">
-        <img src="my_image.jpg" alt="Antony Mlelwa" class="profile-image" />
-        <div class="profile-ring"></div>
-      </div>
       <h1 class="hero-title">Antony Mlelwa <span class="credential">(CFE)</span></h1>
       <p class="hero-tagline">Blockchain Educator & Digital Finance Innovator</p>
-      <div class="roles">
-        <a href="https://www.inkryptus.com" class="role-card" target="_blank">
-          <span class="role-icon">🏢</span>
-          <div class="role-info">
-            <h3>Head of Commercial</h3>
-            <p>Inkryptus</p>
-          </div>
-        </a>
-        <a href="https://www.dienacademy.com" class="role-card" target="_blank">
-          <span class="role-icon">🎓</span>
-          <div class="role-info">
-            <h3>CEO & Founder</h3>
-            <p>DIENA Academy</p>
-          </div>
-        </a>
+      <div class="hero-role">
+        <span class="hero-role-title">CEO & Co-Founder</span>
+        <span class="hero-role-sep">·</span>
+        <a href="https://www.dienacademy.com" target="_blank" class="hero-role-org">DIENACADEMY</a>
       </div>
-      <a href="#contact" class="cta-button">Get In Touch</a>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll Down</span>
-      <div class="scroll-arrow"></div>
     </div>
   </header>
 
@@ -73,8 +57,8 @@
         <div class="about-card">
           <p class="about-text">
             <strong>Antony Polycarp Mlelwa</strong>, widely known as <strong>Trizy Magno</strong>, is an accomplished 
-            educator and blockchain enthusiast with over <strong>8 years</strong> of experience in the blockchain and 
-            digital asset industry. He has a proven track record in demystifying complex crypto concepts, making them 
+            educator and blockchain enthusiast with over <strong><span class="years-exp"></span> years</strong> of experience in the blockchain and 
+            digital asset industry. He has a proven track record in <strong>simplifying</strong> complex crypto concepts, making them 
             accessible to a wide audience, from curious beginners to aspiring professionals.
           </p>
         </div>
@@ -82,7 +66,7 @@
     </section>
 
     <!-- Expertise Section -->
-    <section class="expertise-section" id="expertise">
+   <section class="expertise-section" id="expertise">
       <div class="section-header">
         <span class="section-label">What I Do</span>
         <h2 class="section-title">Mission & Vision</h2>
@@ -90,35 +74,41 @@
       </div>
       <div class="expertise-grid">
         <div class="expertise-card">
-          <div class="expertise-icon">💼</div>
-          <h3>Commercial Leadership</h3>
-          <p>Leading commercial strategy at <a href="https://www.inkryptus.com" target="_blank" class="inline-link">Inkryptus</a>, 
-          driving growth and promoting responsible crypto adoption across markets.</p>
+          <img src="assets/commercial.webp" alt="Commercial Leadership" class="expertise-icon" />
+          <div class="expertise-card__content">
+            <h3>Commercial Leadership</h3>
+            <p>Leading commercial strategy at <a href="https://www.inkryptus.com" target="_blank" class="inline-link">Inkryptus</a>, 
+            driving growth and promoting responsible crypto adoption across markets.</p>
+          </div>
         </div>
         <div class="expertise-card">
-          <div class="expertise-icon">📚</div>
-          <h3>Education & Training</h3>
-          <p>As CEO of <a href="https://www.dienacademy.com" target="_blank" class="inline-link">DIENA Academy</a>, 
-          empowering individuals with financial literacy and blockchain knowledge.</p>
+          <img src="assets/education.webp" alt="Education & Training" class="expertise-icon" />
+          <div class="expertise-card__content">
+            <h3>Education & Training</h3>
+            <p>As CEO of <a href="https://www.dienacademy.com" target="_blank" class="inline-link">DIENACADEMY</a>, 
+            empowering individuals with financial literacy and blockchain knowledge.</p>
+          </div>
         </div>
         <div class="expertise-card">
-          <div class="expertise-icon">🌉</div>
-          <h3>Digital Finance Bridge</h3>
-          <p>Bridging traditional and digital finance, advocating for blockchain's transformative potential 
-          in modern financial systems.</p>
+          <img src="assets/finance.webp" alt="Digital Finance Bridge" class="expertise-icon" />
+          <div class="expertise-card__content">
+            <h3>Digital Finance Bridge</h3>
+            <p>Bridging traditional and digital finance, advocating for blockchain's transformative potential 
+            in modern financial systems.</p>
+          </div>
         </div>
       </div>
-    </section>
+    </section> 
 
     <!-- Stats Section -->
     <section class="stats-section">
       <div class="stats-grid">
         <div class="stat-card">
-          <h3 class="stat-number">8+</h3>
+          <h3 class="stat-number"><span class="years-exp"></span></h3>
           <p class="stat-label">Years Experience</p>
         </div>
         <div class="stat-card">
-          <h3 class="stat-number">1000+</h3>
+          <h3 class="stat-number">5000+</h3>
           <p class="stat-label">Students Trained</p>
         </div>
         <div class="stat-card">
