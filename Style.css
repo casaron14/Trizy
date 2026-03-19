@@ -170,7 +170,7 @@ body::after {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 6rem 4rem 3rem;
+  padding: 6rem 4rem 0;
   gap: 5rem;
   position: relative;
 }
@@ -200,9 +200,10 @@ body::after {
   height: 420px;
   object-fit: cover;
   object-position: top;
-  border-radius: 12px;
+  border-radius: 0;
   display: block;
-  box-shadow: 0 24px 60px rgba(114, 52, 128, 0.18);
+  -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
+  mask-image: linear-gradient(to right, black 70%, transparent 100%);
 }
 
 .profile-ring {
@@ -407,13 +408,12 @@ main {
    ABOUT SECTION
    ============================================ */
 .about-section {
-  padding: 4rem 0;
+  padding: 0.5rem 0 4rem;
   animation: fadeInUp 1s ease 0.3s both;
 }
 
 .about-content {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .about-card {
@@ -434,8 +434,8 @@ main {
 }
 
 .about-text {
-  font-size: 1.15rem;
-  line-height: 1.8;
+  font-size: 1.3rem;
+  line-height: 1.9;
   color: var(--text-gray);
 }
 
@@ -454,80 +454,67 @@ main {
 }
 
 .expertise-card {
-  position: relative;
-  height: 220px;
   background: rgba(219, 212, 255, 0.7);
   border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px rgba(128, 128, 52, 0.15);
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: 1px solid var(--border-color);
-  text-align: center;
-}
-
-.expertise-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(114, 52, 128, 0.25);
-}
-
-.expertise-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  display: block;
-  z-index: 1;
-}
-
-.expertise-card:hover .expertise-icon {
-  transform: scale(1.08);
-  opacity: 0;
-}
-
-.expertise-card__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   padding: 2rem;
-  box-sizing: border-box;
-  background: linear-gradient(135deg, rgba(219,212,255,0.97) 0%, rgba(255,255,227,0.97) 100%);
-  border-radius: 20px;
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 2;
+  align-items: center;
+  text-align: center;
+  box-shadow: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
 }
 
-.expertise-card:hover .expertise-card__content {
-  transform: rotateX(0deg);
+.expertise-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(114, 52, 128, 0.25);
 }
 
 .expertise-card h3 {
   margin: 0 0 0.75rem;
   font-family: 'DM Serif Display', serif;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 400;
   color: var(--accent-purple);
 }
 
 .expertise-card p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   color: var(--text-gray);
-  line-height: 1.6;
+  line-height: 1.85;
+}
+
+/* Expertise Image Marquee */
+.expertise-marquee {
+  margin-top: 3rem;
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: marquee-scroll 20s linear infinite;
+}
+
+.marquee-track img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(114, 52, 128, 0.15);
+}
+
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .inline-link {
